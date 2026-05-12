@@ -8,34 +8,97 @@
     <link href="riva.css" rel="stylesheet" />
 </head>
 <body>
+    <h1>RIVAAA SLAIYYY</h1>
+    
     <div class="container" id="card-list"></div>
     <div class="saldo" id="saldo"></div>
     <script>
+        
         const products = [
             {
-                nama: "nasi telur",
-                harga: 24000,
+                nama: "daiyor",
+                harga: 24000000,
+                gambar: "c.jpg"
+            },
+            {
+                nama: "ferfyum",
+                harga: 36000000,
+                gambar: "o.jpg"
+            },
+            {
+                nama: "waiyesel",
+                harga: 1200000,
+                gambar: "u.jpg"
+            },
+            {
+                nama: "blush daiyor",
+                harga: 3400000,
+                gambar: "m.jpg"
+            },
+            {
+                nama: "speisials",
+                harga: 240000000,
+                gambar: "j.jpg"
+            },
+            {
+                nama: "tyas",
+                harga: 12000000,
+                gambar: "d.jpg"
+            },
+            {
+                nama: "rholexqkxq",
+                harga: 70000000,
+                gambar: "x.jpg"
+            },
+            {
+                nama: "sylyop",
+                harga: 100000000,
+                gambar: "k.jpg"
+            },
+            {
+                nama: "nasyi telyur",
+                harga: 450000,
                 gambar: "r.jpg"
             },
             {
-                nama: "bakso",
-                harga: 12000,
+                nama: "bwaksyo",
+                harga: 360000,
                 gambar: "i.jpg"
             },
             {
-                nama: "pempek",
-                harga: 7000,
+                nama: "vemveq",
+                harga: 120000,
                 gambar: "v.jpg"
             },
             {
-                nama: "dimsum",
-                harga: 10000,
+                nama: "dimsyum",
+                harga: 390000,
                 gambar: "a.jpg"
+            },
+            {
+                nama: "syoklats",
+                harga: 200000,
+                gambar: "w.jpg"
+            },
+            {
+                nama: "matsya",
+                harga: 999000,
+                gambar: "g.jpg"
+            },
+            {
+                nama: "jyerux",
+                harga: 760000,
+                gambar: "h.jpg"
+            },
+            {
+                nama: "dyuriyan",
+                harga: 6400000,
+                gambar: "di.jpg"
             },
         ];
 
-        let saldo = 20000;
-
+        let saldo = 450000000;
+       
         function formatRupiah(amount) {
             return new Intl.NumberFormat("id-ID", {
                 style: "currency",
@@ -45,6 +108,7 @@
             }).format(amount);
         }
 
+        
         document.getElementById("saldo").textContent =
             `Saldo: ${formatRupiah(saldo)}`;
         const card = document.getElementById("card-list");
@@ -81,7 +145,7 @@
                         `Saldo: ${formatRupiah(saldo)}`;
                     alert(
                         `Anda membeli ${products[index].nama} seharga ${formatRupiah(harga)}.
-Sisa saldo: ${formatRupiah(saldo)}`
+                         Sisa saldo: ${formatRupiah(saldo)}`
                     );
                 } else {
                     alert("Saldo tidak mencukupi");
