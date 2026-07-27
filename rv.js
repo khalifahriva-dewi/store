@@ -42,7 +42,7 @@ class Siswa {
 let siswa = new Siswa();
 
 siswa.setNama("Riva");
-siswa.setNilai(85);
+siswa.setNilai(95);
 
 console.log("Nama       : " + siswa.getNama());
 console.log("Nilai      : " + siswa.getNilai());
